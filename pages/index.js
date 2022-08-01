@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { SEO, NavBar, Hero } from "../components";
+import { SEO, NavBar, Hero, About, Projects } from "../components";
 import { gsap } from "gsap";
 
 export default function Home() {
@@ -10,6 +10,8 @@ export default function Home() {
       <main>
         <div>
           <Hero />
+          <About />
+          <Projects />
         </div>
       </main>
     </>
