@@ -65,7 +65,7 @@ const Hero = () => {
       ref={(el) => (hero = el)}
     >
       <div className="w-full max-w-[70rem] mx-auto text-[#2C2C2C] flex justify-center">
-        <h1 className="flex flex-col text-left relative w-max md:w-full">
+        <h1 className="flex flex-col text-left relative w-max  font-['Karma']">
           <figure className="absolute w-[45vw] top-[14%] h-full md:w-[35vw] lg:w-[25vw] 3xl:w-[640px]">
             <Image
               src="/background.svg"
