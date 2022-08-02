@@ -93,11 +93,11 @@ const NavBar = () => {
             ></div>
           </button>
           <nav className="hidden md:flex">
-            <ul className="text-2xl flex gap-3">
+            <ul className="text-xl flex gap-3">
               <Link href="/">
                 <li className="cursor-pointer link-underline">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="#allProjects">
                 <li className="cursor-pointer link-underline">Projects</li>
               </Link>
               <Link href="/">
@@ -127,7 +127,7 @@ const NavBar = () => {
               </span>
             </li>
           </Link>
-          <Link href="/">
+          <Link href="#allProjects">
             <li className="cursor-pointer overflow-hidden leading-tight">
               <span
                 className={`inline-block translate-y-full ${

@@ -4,9 +4,9 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Skill = ({ icon, name }) => {
   return (
-    <div className="w-28 flex flex-[0_0_7rem] border py-2 mr-12 px-5 flex-col gap-2 text-center rounded">
-      <i className={`${icon} colored text-6xl`}></i>
-      <p>{name}</p>
+    <div className="w-28 flex flex-[0_0_7rem] border py-1 mr-12 px-3 flex-col gap-2 text-center rounded md:py-2 md:px-5">
+      <i className={`${icon} colored text-4xl md:text-6xl`}></i>
+      <p className="text-sm">{name}</p>
     </div>
   );
 };
