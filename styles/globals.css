@@ -9,6 +9,8 @@
 
   html {
     background-color: white;
+    font-family: "Open Sans", sans-serif;
+    color: #2c2c2c;
   }
 
   h1,
@@ -36,5 +38,25 @@
 
   .layer {
     animation-delay: 400ms !important;
+  }
+
+  .project:nth-child(odd) .project-image {
+    grid-area: 1/5/9/13;
+    justify-self: end;
+  }
+
+  .project:nth-child(odd) .project-description {
+    grid-area: 2/1/8/9;
+    align-items: end;
+  }
+
+  .project:last-of-type {
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .project:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
