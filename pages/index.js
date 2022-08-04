@@ -1,5 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { SEO, NavBar, Hero, About, Projects } from "../components";
+import React, { useEffect } from "react";
+import {
+  SEO,
+  NavBar,
+  Hero,
+  About,
+  Projects,
+  Contact,
+  Footer,
+} from "../components";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
@@ -18,23 +26,56 @@ export default function Home() {
       backgroundColor: "#2c2c2c",
     });
 
-    gsap.utils.toArray(".project-description").forEach((description) => {
-      gsap.fromTo(
-        description,
-        {
-          y: window.innerWidth < 768 ? "-20%" : "30%",
-        },
-        {
-          scrollTrigger: {
-            trigger: description,
-            start: "top 90%",
-            end: "bottom top",
-            scrub: true,
-          },
-          y: window.innerWidth < 768 ? "-40%" : "-30%",
-        }
-      );
+    ScrollTrigger.matchMedia({
+      "(max-width: 767px)": function () {
+        gsap.utils.toArray(".project-description").forEach((description) => {
+          gsap.fromTo(
+            description,
+            {
+              y: "-20%",
+            },
+            {
+              scrollTrigger: {
+                trigger: description,
+                start: "top 90%",
+                end: "bottom top",
+                scrub: true,
+              },
+              y: "-40%",
+            }
+          );
+        });
+      },
+      "(min-width: 768px)": function () {
+        gsap.utils.toArray(".project-description").forEach((description) => {
+          gsap.fromTo(
+            description,
+            {
+              y: "30%",
+            },
+            {
+              scrollTrigger: {
+                trigger: description,
+                start: "top 90%",
+                end: "bottom top",
+                scrub: true,
+              },
+              y: "-30%",
+            }
+          );
+        });
+      },
     });
+
+    gsap.to(".home", {
+      scrollTrigger: {
+        trigger: ".contact",
+        start: "top bottom",
+        scrub: true,
+      },
+      scaleX: 0.85,
+    });
+
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
@@ -50,7 +91,9 @@ export default function Home() {
           <About />
           <Projects />
         </div>
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }
