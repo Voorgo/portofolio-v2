@@ -41,6 +41,7 @@ const Skills = () => {
       </div>
       <button
         className="absolute left-0 top-1/2 -translate-y-1/2"
+        aria-label="Scroll Prev"
         onClick={scrollPrev}
       >
         <svg
@@ -60,6 +61,7 @@ const Skills = () => {
       </button>
       <button
         className="absolute right-0 top-1/2 -translate-y-1/2"
+        aria-label="Scroll Next"
         onClick={scrollNext}
       >
         <svg
@@ -81,9 +83,9 @@ const About = () => {
   return (
     <section className="px-[6vw]">
       <div className="max-w-[70rem] mx-auto pt-14 flex flex-col gap-10  relative before:absolute before:content-[''] before:w-full before:h-[1px] rounded before:bg-[#2c2c2c] before:left-0 before:top-0">
-        <h1 className="relative before:content-['<'] after:content-['>'] text-3xl font-semibold left-0 md:-left-6">
+        <h2 className="relative before:content-['<'] after:content-['>'] text-3xl font-semibold left-0 md:-left-6">
           About
-        </h1>
+        </h2>
         <div className="flex flex-col gap-5 font-medium text-lg">
           <p>Hi there! I'm Cătălin, a front-end dev.</p>
           <i className="font-normal">

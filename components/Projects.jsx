@@ -15,6 +15,7 @@ const Project = ({ title, name, children, buildWith, liveLink, codeLink }) => {
             srcSet={`/${name}.png`}
             layout="fill"
             objectFit="cover"
+            alt="Project Screenshot"
           />
         </div>
         <div className="w-full col-[5_/_13] row-[2_/_8] z-[2] project-description flex flex-col justify-start relative gap-4  ">
@@ -69,7 +70,7 @@ const Project = ({ title, name, children, buildWith, liveLink, codeLink }) => {
 
 const Projects = () => {
   return (
-    <section className="px-[6vw] w-full pt-12 projects">
+    <section className="px-[6vw] w-full pt-12 pb-12 projects">
       <div className="w-full">
         <h2 className="relative before:content-['<'] after:content-['>'] text-3xl font-semibold mb-20 md:mb-0 left-0 md:-left-6 max-w-[70rem] mx-auto">
           Projects

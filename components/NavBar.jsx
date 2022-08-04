@@ -68,7 +68,7 @@ const NavBar = () => {
           <button
             aria-label="menu"
             onClick={handleToggle}
-            className="md:hidden z-[3]"
+            className="md:hidden z-[3] hamburger"
           >
             <div
               className={`bar mb-1 ${
@@ -100,7 +100,7 @@ const NavBar = () => {
               <Link href="#allProjects">
                 <li className="cursor-pointer link-underline">Projects</li>
               </Link>
-              <Link href="/">
+              <Link href="#contact">
                 <li className="cursor-pointer link-underline">Contact</li>
               </Link>
             </ul>
@@ -140,7 +140,7 @@ const NavBar = () => {
               </span>
             </li>
           </Link>
-          <Link href="/">
+          <Link href="#contact">
             <li className="cursor-pointer  overflow-hidden">
               <span
                 className={`inline-block translate-y-full ${
