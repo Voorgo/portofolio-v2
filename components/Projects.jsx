@@ -9,12 +9,13 @@ const Project = ({ title, name, children, buildWith, liveLink, codeLink }) => {
     >
       <div className="flex flex-col md:grid md:grid-cols-[repeat(12,_1fr)] max-w-[70rem]">
         <div className="relative self-center w-[90%] md:w-full max-w-[30rem] justify-self-start col-[1_/_9] row-[1_/_9] project-image  aspect-square brightness-75">
-          <Image
+          <img
+            className="object-cover h-full"
             src={`/${name}.png`}
-            sizes="100vw"
-            srcSet={`/${name}.png`}
-            layout="fill"
-            objectFit="cover"
+            // sizes="100vw"
+            // srcSet={`/${name}.png`}
+            // layout="fill"
+            // objectFit="cover"
             alt="Project Screenshot"
           />
         </div>
@@ -28,6 +29,7 @@ const Project = ({ title, name, children, buildWith, liveLink, codeLink }) => {
             <div className="self-end flex gap-6 text-2xl">
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 className="cursor-pointer group"
                 href={codeLink}
               >
@@ -39,6 +41,7 @@ const Project = ({ title, name, children, buildWith, liveLink, codeLink }) => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 className="cursor-pointer group"
                 href={liveLink}
               >
@@ -75,6 +78,21 @@ const Projects = () => {
         <h2 className="relative before:content-['<'] after:content-['>'] text-3xl font-semibold mb-20 md:mb-0 left-0 md:-left-6 max-w-[70rem] mx-auto">
           Projects
         </h2>
+        <Project
+          title="Algorithm Visualizer"
+          name="algo"
+          buildWith="Build with React, Tailwind CSS, React Router and TypeScript"
+          liveLink="https://voorgo.github.io/Algo-Visualizer/"
+          codeLink="https://github.com/Voorgo/Algo-Visualizer"
+        >
+          <p>
+            Algo Visualizer is an interactive platform that visualizes
+            algorithms from code. Sorting algorithms are used to sort a data
+            structure according to a specific order relationship, such as
+            numerical order or lexicographical order. Learning an algorithm gets
+            much easier with visualizing it.
+          </p>
+        </Project>
         <Project
           title="Artismo"
           name="artismo"

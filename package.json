@@ -2,9 +2,10 @@
   "name": "my-portofolio-v2.0",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ser-catalin.com/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },

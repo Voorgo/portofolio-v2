@@ -82,7 +82,10 @@ const Contact = () => {
                     <i className="devicon-github-original colored text-4xl"></i>
                   </a>
                 </Link>
-                <Link href="/" passHref>
+                <Link
+                  href="https://www.linkedin.com/in/%C8%99erban-c%C4%83t%C4%83lin-785397214/"
+                  passHref
+                >
                   <a aria-label="Linkedin">
                     <i className="devicon-linkedin-plain colored text-4xl"></i>
                   </a>

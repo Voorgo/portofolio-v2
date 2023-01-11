@@ -30,6 +30,7 @@ const Skills = () => {
       <div className="w-full overflow-hidden" ref={emblaRef}>
         <div className="flex  select-none cursor-grab">
           <Skill icon="devicon-javascript-plain" name="JavaScript" />
+          <Skill icon="devicon-typescript-plain" name="TypeScript" />
           <Skill icon="devicon-react-original" name="React" />
           <Skill icon="devicon-nextjs-line" name="NextJs" />
           <Skill icon="devicon-sass-original" name="SASS" />
@@ -95,11 +96,11 @@ const About = () => {
             some of the forces that helped me developed problem-solving skills.
           </i>
           <p>
-            I'm fascinated by everything web development means, I enjoy creating
-            new experiences for users and bringing designs to life using
-            animations. My aim is to develop my aptitudes and enlarge my realm
-            of knowledge with every task and project, as well as better myself
-            as an employee in the progress.
+            I'm fascinated by everything what web development means, I enjoy
+            creating new experiences for users and bringing designs to life
+            using animations. My aim is to develop my aptitudes and enlarge my
+            realm of knowledge with every task and project, as well as better
+            myself as an employee in the progress.
           </p>
           <p>
             I work with <span className="font-semibold">JavaScript</span>,{" "}
