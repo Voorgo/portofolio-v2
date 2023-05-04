@@ -82,8 +82,8 @@ const Projects = () => {
           title="Algorithm Visualizer"
           name="algo"
           buildWith="Build with React, Tailwind CSS, React Router and TypeScript"
-          liveLink="https://voorgo.github.io/Algo-Visualizer/"
-          codeLink="https://github.com/Voorgo/Algo-Visualizer"
+          liveLink="https://voorgo.github.io/Algorithm-Visualizer/"
+          codeLink="https://github.com/Voorgo/Algorithm-Visualizer"
         >
           <p>
             Algo Visualizer is an interactive platform that visualizes
