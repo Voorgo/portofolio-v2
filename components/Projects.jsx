@@ -94,6 +94,18 @@ const Projects = () => {
           </p>
         </Project>
         <Project
+          title="World Chat"
+          name="world"
+          buildWith="Build with React, Tailwind CSS, React Router, Express, Axios, Socket.IO"
+          liveLink="https://wo-chat.onrender.com/"
+          codeLink="https://github.com/Voorgo/World-Chat"
+        >
+          <p>
+            World Chat is an app that lets you chat with people around the
+            world. Create a room with a topic and select a location.
+          </p>
+        </Project>
+        <Project
           title="Artismo"
           name="artismo"
           buildWith="Build with React, Tailwind CSS, React Router and Firebase"
